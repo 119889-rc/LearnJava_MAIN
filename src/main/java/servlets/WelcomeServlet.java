@@ -9,7 +9,7 @@ import javax.servlet.annotation.WebServlet;
 
 @WebServlet(
         name = "home-page",
-        description = "hui-nani",
+        description = "description",
         urlPatterns = {"/startlearn"}
         )
 public class WelcomeServlet extends HttpServlet {
@@ -17,7 +17,6 @@ public class WelcomeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-//        processRequest(request, response);
     }
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

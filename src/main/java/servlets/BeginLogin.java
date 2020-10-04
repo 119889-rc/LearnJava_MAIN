@@ -18,8 +18,6 @@ public class BeginLogin extends HttpServlet {
         protected void doGet(HttpServletRequest request, HttpServletResponse response)
                 throws ServletException, IOException {
 
-//        processRequest(request, response);
-                response.sendRedirect("/user1234.jsp");
         }
         @Override
         protected void doPost(HttpServletRequest request, HttpServletResponse response)
