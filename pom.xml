@@ -10,8 +10,8 @@
 
     <packaging>war</packaging>
     <properties>
-        <maven.compiler.source>1.6</maven.compiler.source>
-        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -26,7 +26,7 @@
             <version>4.1.2</version>
         </dependency>
 
-<!--        Какая-то хуйня-->
+<!--        ???             -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>

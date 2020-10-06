@@ -74,8 +74,8 @@
 <%--<form name="Simple" action="toUser1234" method="POST">--%>
 <%--    <input type="submit" name="button" class="btn btn-primary btn-user btn-block" value="Sign in"/>--%>
 <%--</form>--%>
-                                    <form name="Simple" action="beginLogin" method="POST">
-                                        <input type="submit" name="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-top" value="Начать курс"/>
+                                    <form name="Simple1" action="beginLogin" method="GET">
+                                        <input type="submit" name="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-top" value="Начать курс1"/>
                                     </form>
 
 
