@@ -14,16 +14,15 @@ public class BeginLogin extends HttpServlet {
 
         @Override
         protected void doGet(HttpServletRequest request, HttpServletResponse response) {
+
+        }
+        @Override
+        protected void doPost(HttpServletRequest request, HttpServletResponse response) {
                 try {
-                        getServletContext().getRequestDispatcher("/startlearn/user1234.jsp").forward(request, response);
+                        getServletContext().getRequestDispatcher("/user1234.jsp").forward(request, response);
                 }
                 catch (ServletException | IOException exception) {
                         System.out.println(exception);
                 }
-        }
-        @Override
-        protected void doPost(HttpServletRequest request, HttpServletResponse response) {
-
-
         }
 }

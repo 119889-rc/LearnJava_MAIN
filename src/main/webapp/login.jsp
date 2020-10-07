@@ -62,22 +62,12 @@
                                         </div>
                                     </div>
 
-<%--             <form name="Simple" action="startlearn" method="POST">--%>
-<%--             <input type="submit" name="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-top" value="Начать курс"/>--%>
-<%--             </form>--%>
-<%--                                    <a href="index.jsp" class="btn btn-primary btn-user btn-block">--%>
-<%--                                        Login--%>
-<%--                                    </a>--%>
-<%--                            <a name="Simple" action="login123" method="POST">--%>
-<%--                            <input type="submit" name="button" class="btn btn-primary btn-user btn-block" value="Login"/>--%>
-<%--                            </a>--%>
-<%--<form name="Simple" action="toUser1234" method="POST">--%>
-<%--    <input type="submit" name="button" class="btn btn-primary btn-user btn-block" value="Sign in"/>--%>
-<%--</form>--%>
-                                    <form name="Simple1" action="beginLogin" method="GET">
-                                        <input type="submit" name="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-top" value="Начать курс1"/>
-                                    </form>
-
+                                    <a>
+                                        <em>
+                                        <input type="submit" name="button" class="btn btn-primary btn-user btn-block" value="Login"
+                                        formaction="beginLogin" formmethod="POST"/>
+                                        </em>
+                                    </a>
 
                                     <hr>
                                     <a href="index.jsp" class="btn btn-google btn-user btn-block">
@@ -86,9 +76,13 @@
                                     <a href="index.jsp" class="btn btn-facebook btn-user btn-block">
                                         <em class="fab fa-facebook-f fa-fw"></em> Login with Facebook
                                     </a>
-<%--                        </form>--%>
 
-                      <hr>
+
+<%--                                <form name="Simple1" action="beginLogin" method="GET">--%>
+<%--                                    <input type="submit" name="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-top" value="Начать курс4"/>--%>
+<%--                                </form>--%>
+                                    <hr>
+                                </form>
                       <div class="text-center">
                           <a class="small" href="forgot-password.jsp">Forgot Password?</a>
                       </div>
