@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Anthony Stain
+  User: Anthony Kozinov
   Date: 31.08.2020
   Time: 22:34
   To change this template use File | Settings | File Templates.
@@ -63,7 +63,7 @@
                                         <em>
                                             <input type="submit" name="button"
                                                    class="btn btn-primary btn-user btn-block" value="Login | Registration"
-                                                   formaction="beginLogin" formmethod="POST"/>
+                                                   formaction="SessionsServlet" formmethod="POST"/>
                                         </em>
                                     </a>
 

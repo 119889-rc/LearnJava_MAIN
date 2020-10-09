@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Anthony Stain
+  User: Anthony Kozinov
   Date: 02.09.2020
   Time: 5:16
 --%>
@@ -45,10 +45,12 @@
     <header class="w3-container w3-red w3-center" style="padding:128px 16px">
         <h1 class="w3-margin w3-jumbo">LEARN JAVA</h1>
         <p class="w3-xlarge">ORACLE JAVA TUTORIALS</p>
+
         <form name="Simple" action="startlearn" method="GET">
             <input type="submit" name="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-top"
                    value="Начать курс"/>
         </form>
+
     </header>
     <!-- First Grid -->
     <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">

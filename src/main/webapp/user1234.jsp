@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: 52449
+  User: Anthony Kozinov
   Date: 9/20/2020
   Time: 2:59 AM
   To change this template use File | Settings | File Templates.
@@ -18,7 +18,11 @@ Counter: ${counter}
 <br /><hr />
 MaxInactiveInterval: ${pageContext.session.maxInactiveInterval}<br/>
 ID session1: ${pageContext.session.id}<br/>
+Value1: ${locate}<br/>
 ID session2: ${pageContext.session.getId()} <br />
+New cookie1: ${cookie}<br/>
+New cookie_x1: ${cookie.getName + cookie.getValue}<br/>
+New cookie2: ${cookie.size()}<br/>
 Lifecycle: ${lifecycle}<br/>
 </body>
 </html>
