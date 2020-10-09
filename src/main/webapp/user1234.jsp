@@ -5,14 +5,20 @@
   Time: 2:59 AM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>user1</title>
-    <meta charset="UTF-8">
 </head>
 <body>
-<h1> User1-page HERE !!! </h1>
+<h2>Role: ${role}</h2>
+<br /><hr />
+Counter: ${counter}
+<br /><hr />
+MaxInactiveInterval: ${pageContext.session.maxInactiveInterval}<br/>
+ID session1: ${pageContext.session.id}<br/>
+ID session2: ${pageContext.session.getId()} <br />
+Lifecycle: ${lifecycle}<br/>
 </body>
 </html>
