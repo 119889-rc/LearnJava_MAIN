@@ -17,11 +17,11 @@ public class AccountService {
     }
 
     public void addNewUser(UserProfile userProfile) {
-        loginToProfile.put(userProfile.getLogin(), userProfile);
+        loginToProfile.put(userProfile.getEmail(), userProfile);
     }
 
-    public UserProfile getUserByLogin(String login) {
-        return loginToProfile.get(login);
+    public UserProfile getUserByLogin(String email) {
+        return loginToProfile.get(email);
     }
 
     public UserProfile getUserBySessionId(String sessionId) {
