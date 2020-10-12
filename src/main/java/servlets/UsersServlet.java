@@ -1,3 +1,5 @@
+package servlets;
+
 import accounts.AccountService;
 
 import javax.servlet.ServletException;

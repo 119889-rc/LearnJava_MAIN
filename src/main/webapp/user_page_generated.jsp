@@ -9,15 +9,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>${role}</title>
+    <title>HI</title>
 </head>
 <body>
 <h2>New Page</h2>
 <br /> <hr />
 Role: ${role}<br />
 ID session: ${pageContext.session.getId()} <br />
-Email: ${email1}<br />
-Email: ${exampleInputEmail}<br />
+ID session2: ${session} <br />
+Email: ${email}<br />
 Passwd: ${password}<br />
 </body>
 </html>

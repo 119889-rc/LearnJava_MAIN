@@ -1,9 +1,9 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Anthony Kozinov
-  Date: 31.08.2020
-  Time: 22:34
-  To change this template use File | Settings | File Templates.
+  User: A. Kozinov
+  Date: 11.10.2020
+  Time: 6:16
+
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <!DOCTYPE html>
@@ -38,30 +38,33 @@
                         <div class="col-lg-6">
                             <div class="p-5">
 
-                                <form class="user">
+                                <form name="GGWP" action="#" method="post">
                                     <div class="form-group">
-<%--                                    <label for="exampleInputEmail"></label>--%>
                                         <label for="email"></label>
-                                        <input type="email" name="username" class="form-control form-control-user"
-<%--                                           id="exampleInputEmail" aria-describedby="emailHelp"--%>
-                                               id="email" aria-describedby="emailHelp"
+                                        <input type="email" class="form-control form-control-user"
+                                               id="email" value="${email}" aria-describedby="emailHelp"
                                                placeholder="Email Address">
                                     </div>
+
                                     <div class="form-group">
-                                        <label for="password"></label>
-                                        <input type="password" name="userpass" class="form-control form-control-user"
-                                               id="password"
+                                        <label for="passwd"></label>
+                                        <input type="password" class="form-control form-control-user"
+                                               id="passwd" value="${passwd}"
                                                placeholder="Password">
                                     </div>
+
                                     <div class="form-group">
                                         <div class="custom-control custom-checkbox small">
                                             <input type="checkbox" class="custom-control-input" id="customCheck">
                                             <label class="custom-control-label" for="customCheck">Remember Me</label>
                                         </div>
                                     </div>
-                                            <input type="submit" name="button"
-                                                   class="btn btn-primary btn-user btn-block" value="Login | Registration"
-                                                   formaction="startLogin" formmethod="POST"/>
+
+<%--                                    <a>--%>
+                                        <input type="submit" name="Login"
+                                               class="btn btn-primary btn-user btn-block" value="Login | Registration"/>
+<%--                                    </a>--%>
+
                                     <hr>
                                     <a href="index.jsp" class="btn btn-google btn-user btn-block">
                                         <em class="fab fa-google fa-fw"></em> Login with Google
@@ -71,12 +74,24 @@
                                     </a>
                                     <hr>
                                 </form>
+
+<%--                                <form2 action="processcustomer" method="post">--%>
+<%--                                    <label for="firstname">Имя : </label>--%>
+<%--                                    <input type="text" name="firstname" id="firstname" value="${firstname}">--%>
+<%--                                    <label for="lastname">Фамилия:--%>
+<%--                                        <input type="text" name="lastname" id="lastname" value="${lastname}">--%>
+<%--                                        <label for="email2">Email2: </label>--%>
+<%--                                        <input type="text" name="email2" id="email2" value="${email2}">--%>
+<%--                                        <input type="submit" name="signup" value="Sign Up">--%>
+<%--                                    </label>--%>
+<%--                                </form2>--%>
+
+
+
+
                                 <div class="text-center">
-                                    <a class="small" href="forgot-password.jsp">Forgot Password?</a>
+                                    <a class="small" href="#">Forgot Password?</a>
                                 </div>
-<%--                                <div class="text-center">--%>
-<%--                                    <a class="small" href="registration.jsp">Create an Account!</a>--%>
-<%--                                </div>--%>
                             </div>
                         </div>
                     </div>

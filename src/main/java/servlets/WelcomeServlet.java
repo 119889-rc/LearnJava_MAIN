@@ -1,3 +1,5 @@
+package servlets;
+
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -6,9 +8,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.annotation.WebServlet;
 
 @WebServlet(
-        name = "home-page",
+        name = "servlets.WelcomeServlet",
         description = "description",
-        urlPatterns = {"/startlearn"}
+        urlPatterns = {"/loginpage"}
         )
 public class WelcomeServlet extends HttpServlet {
     @Override
