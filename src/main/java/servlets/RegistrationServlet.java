@@ -12,11 +12,11 @@ import java.io.PrintWriter;
 /**
  * @author A.Kozinov
  */
-@WebServlet(name = "servlets.SessionsServlet",
+@WebServlet(name = "servlets.RegistrationServlet",
         description = "my descr",
-        urlPatterns = {"/startLogin"}
+        urlPatterns = {"/processregistration"}
 )
-public class SessionsServlet extends HttpServlet {
+public class RegistrationServlet extends HttpServlet {
     //get logged user profile
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) {
@@ -27,8 +27,8 @@ public class SessionsServlet extends HttpServlet {
             IOException, ServletException {
         PrintWriter out = response.getWriter();
 
-        String n = request.getParameter("email");
-        String p = request.getParameter("password");
+        String n = request.getParameter("email1");
+        String p = request.getParameter("passwd1");
 
 //        String x = n + p;
 //        byte[] c = x.getBytes();

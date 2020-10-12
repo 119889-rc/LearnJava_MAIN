@@ -19,9 +19,9 @@ public class ConnectionLoginFormToSQL {
                 String sql = "INSERT INTO users.nevergo1 (FirstColumn, SecondColumn) Values (?, ?)";
                 PreparedStatement pr = conn.prepareStatement(sql);
                 pr.setString(1, n);
-                pr.setString(1, p);
-                ResultSet rs = pr.executeQuery();
-                status = rs.next();
+                pr.setString(2, p);
+                int rs = pr.executeUpdate();
+                status = rs==1;
             }
         } catch (Exception ex) {
 

@@ -38,10 +38,10 @@
                         <div class="col-lg-6">
                             <div class="p-5">
 
-                                <form name="GGWP" action="#" method="post">
+                                <form name="GGWP" action="processregistration" method="post">
                                     <div class="form-group">
                                         <label for="email"></label>
-                                        <input type="email" class="form-control form-control-user"
+                                        <input type="email" name="email1" class="form-control form-control-user"
                                                id="email" value="${email}" aria-describedby="emailHelp"
                                                placeholder="Email Address">
                                     </div>
@@ -49,7 +49,7 @@
                                     <div class="form-group">
                                         <label for="passwd"></label>
                                         <input type="password" class="form-control form-control-user"
-                                               id="passwd" value="${passwd}"
+                                               id="passwd" name="passwd1" value="${passwd}"
                                                placeholder="Password">
                                     </div>
 
