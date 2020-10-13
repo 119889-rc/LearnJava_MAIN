@@ -14,10 +14,6 @@
 <body>
 <h2>New Page</h2>
 <br /> <hr />
-Role: ${role}<br />
 ID session: ${pageContext.session.getId()} <br />
-ID session2: ${session} <br />
-Email: ${email}<br />
-Passwd: ${password}<br />
 </body>
 </html>

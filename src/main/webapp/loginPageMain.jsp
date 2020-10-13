@@ -24,12 +24,9 @@
 </head>
 <body class="bg-gradient-primary">
 <div class="container">
-
     <!-- Outer Row -->
     <div class="row justify-content-center">
-
         <div class="col-xl-10 col-lg-12 col-md-9">
-
             <div class="card o-hidden border-0 shadow-lg my-5">
                 <div class="card-body p-0">
                     <!-- Nested Row within Card Body -->
@@ -38,21 +35,19 @@
                         <div class="col-lg-6">
                             <div class="p-5">
 
-                                <form name="GGWP" action="processregistration" method="post">
+                                <form name="LoginRegistration" action="proccessLogin" method="post">
                                     <div class="form-group">
                                         <label for="email"></label>
-                                        <input type="email" name="email1" class="form-control form-control-user"
-                                               id="email" value="${email}" aria-describedby="emailHelp"
+                                        <input type="email" name="email2" class="form-control form-control-user"
+                                               id="email"  aria-describedby="emailHelp"
                                                placeholder="Email Address">
                                     </div>
-
                                     <div class="form-group">
                                         <label for="passwd"></label>
                                         <input type="password" class="form-control form-control-user"
-                                               id="passwd" name="passwd1" value="${passwd}"
+                                               id="passwd" name="passwd2"
                                                placeholder="Password">
                                     </div>
-
                                     <div class="form-group">
                                         <div class="custom-control custom-checkbox small">
                                             <input type="checkbox" class="custom-control-input" id="customCheck">
@@ -60,34 +55,24 @@
                                         </div>
                                     </div>
 
-<%--                                    <a>--%>
-                                        <input type="submit" name="Login"
-                                               class="btn btn-primary btn-user btn-block" value="Login | Registration"/>
+                                    <input type="submit" name="LoginButton"
+                                           class="btn btn-primary btn-user btn-block" value="Login"/>
+<%--                                    <hr>--%>
+<%--                                    <a href="index.jsp" class="btn btn-google btn-user btn-block">--%>
+<%--                                        <em class="fab fa-google fa-fw"></em> Login with Google--%>
 <%--                                    </a>--%>
-
-                                    <hr>
-                                    <a href="index.jsp" class="btn btn-google btn-user btn-block">
-                                        <em class="fab fa-google fa-fw"></em> Login with Google
-                                    </a>
-                                    <a href="index.jsp" class="btn btn-facebook btn-user btn-block">
-                                        <em class="fab fa-facebook-f fa-fw"></em> Login with Facebook
-                                    </a>
-                                    <hr>
+<%--                                    <a href="index.jsp" class="btn btn-facebook btn-user btn-block">--%>
+<%--                                        <em class="fab fa-facebook-f fa-fw"></em> Login with Facebook--%>
+<%--                                    </a>--%>
+<%--                                    <hr>--%>
                                 </form>
 
-<%--                                <form2 action="processcustomer" method="post">--%>
-<%--                                    <label for="firstname">Имя : </label>--%>
-<%--                                    <input type="text" name="firstname" id="firstname" value="${firstname}">--%>
-<%--                                    <label for="lastname">Фамилия:--%>
-<%--                                        <input type="text" name="lastname" id="lastname" value="${lastname}">--%>
-<%--                                        <label for="email2">Email2: </label>--%>
-<%--                                        <input type="text" name="email2" id="email2" value="${email2}">--%>
-<%--                                        <input type="submit" name="signup" value="Sign Up">--%>
-<%--                                    </label>--%>
-<%--                                </form2>--%>
-
-
-
+                                <hr><a>
+                                <form name="Registration" action="proccessregistration" method="get">
+                                <input type="submit" name="Registration"
+                                       class="btn btn-google btn-user btn-block" value="Registration"/>
+                                </form>
+                                </a>
 
                                 <div class="text-center">
                                     <a class="small" href="#">Forgot Password?</a>

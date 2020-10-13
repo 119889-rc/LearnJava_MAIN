@@ -3,15 +3,15 @@ package connections;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 /**
- *  Test CLASS
+ * @author A.Kozinov
  */
 
-public class ConnectionLoginFormToSQL {
-
-    public static boolean xMethod(String q) {
-         boolean status1 = false;
+public class ConnectionRegistrationFormToSQL {
+    public static boolean validate(String q) {
+       boolean status = false;
 
         try {
             String url = "jdbc:mysql://localhost:3306/users?serverTimezone=Europe/Moscow&useSSL=false";
@@ -20,23 +20,20 @@ public class ConnectionLoginFormToSQL {
             Class.forName("com.mysql.cj.jdbc.Driver").getDeclaredConstructor().newInstance();
             try (Connection conn = DriverManager.getConnection(url, username, password)) {
 
-                /**
-                 *  Default SQL - ...
-                 *  Methods PrepareStatement:
-                 *      executeUpdate - ...
-                 *      ...
-                 */
-                String sql = "SELECT * FROM users.hashkey WHERE (HashUsers) LIKE VALUES (?)";
+                String sql = "INSERT INTO users.hashkey (HashUsers) Values (?)";
                 PreparedStatement pr = conn.prepareStatement(sql);
                 pr.setString(1, q);
                 int rs = pr.executeUpdate();
-                status1 = rs==1;
+                status = rs==1;
             }
         } catch (Exception ex) {
 
             System.out.println("Connection failed...");
             System.out.println(ex);
         }
-        return status1;
+        return status;
     }
 }
+
+
+//   String sql = "select  * from users.nevergo where FirstColumn=? and SecondColumn=?";

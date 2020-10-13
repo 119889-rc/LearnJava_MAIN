@@ -1,6 +1,6 @@
 package servlets;
 
-import connections.ConnectionLoginFormToSQL;
+import connections.ConnectionRegistrationFormToSQL;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,12 +11,13 @@ import java.io.PrintWriter;
 
 /**
  * @author A.Kozinov
+ * this code is ...
  */
-@WebServlet(name = "servlets.RegistrationServlet",
+@WebServlet(name = "servlets.RegistrationFormServlet",
         description = "my descr",
-        urlPatterns = {"/processregistration"}
+        urlPatterns = {"/registrationform"}
 )
-public class RegistrationServlet extends HttpServlet {
+public class RegistrationFormServlet extends HttpServlet {
     //get logged user profile
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) {
@@ -27,14 +28,17 @@ public class RegistrationServlet extends HttpServlet {
             IOException, ServletException {
         PrintWriter out = response.getWriter();
 
+
         String n = request.getParameter("email1");
         String p = request.getParameter("passwd1");
+        String u = request.getParameter("username1");
 
-//        String x = n + p;
-//        byte[] c = x.getBytes();
-//        String q = bytesToHex(c);
+        String x = n + p;
+        byte[] c = x.getBytes();
+        /* q - endpoint DB variable */
+        String q = bytesToHex(c);
 
-        if (ConnectionLoginFormToSQL.validate(n, p)) {
+        if (ConnectionRegistrationFormToSQL.validate(q)) {
             request.getRequestDispatcher("/user_page_generated.jsp").forward(request, response);
         } else {
             out.print("Sorry");
