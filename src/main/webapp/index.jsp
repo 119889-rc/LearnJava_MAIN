@@ -37,8 +37,8 @@
             <em>class="fa fa-bars"></em>
         </a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-        <a href="login.jsp" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">LogIn</a>
-        <a href="login.jsp" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Registration</a>
+        <a href="old_login.jsp" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">LogIn</a>
+        <a href="old_login.jsp" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Registration</a>
         <a href="404.jsp" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Support</a>
     </div>
     <!-- Header -->

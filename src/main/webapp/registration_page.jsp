@@ -62,6 +62,7 @@
                                             <%--Red Form Button Class--%>
                                            class="btn btn-google btn-user btn-block" value="Registration"/>
                                 </form>
+
                             </div>
                         </div>
                     </div>

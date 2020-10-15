@@ -5,7 +5,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
 /**
- *  Test CLASS
+ * @author A.Kozinov
+ * date: Oct 15 2020
+ * Testr Class
  */
 
 public class ConnectionLoginFormToSQL {

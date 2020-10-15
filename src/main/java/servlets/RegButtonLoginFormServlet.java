@@ -7,6 +7,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * @author A.Kozinov
+ * date: Oct 15 2020
+ */
 @WebServlet ( name = "RegistrationServlet",
         description = "234",
         urlPatterns = "/proccessregistration"

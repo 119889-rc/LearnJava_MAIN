@@ -7,6 +7,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.annotation.WebServlet;
 
+/**
+ * @author A.Kozinov
+ * date: Oct 15 2020
+ */
 @WebServlet(
         name = "servlets.WelcomeServlet",
         description = "description",
@@ -26,7 +30,7 @@ public class WelcomeServlet extends HttpServlet {
     }
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) {
-       //getServletContext().getRequestDispatcher("/login.jsp").forward(request, response);
+       //getServletContext().getRequestDispatcher("/old_login.jsp").forward(request, response);
 
     }
 }

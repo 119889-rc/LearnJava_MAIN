@@ -9,6 +9,7 @@ import java.io.IOException;
 
 /**
  * @author A.Kozinov
+ * date: Oct 15 2020
  */
 
 public class UsersServlet {

@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 
 /**
  * @author A.Kozinov
- * this code is ...
+ * date: Oct 15 2020
  */
 @WebServlet(name = "servlets.RegistrationFormServlet",
         description = "my descr",
@@ -31,7 +31,6 @@ public class RegistrationFormServlet extends HttpServlet {
 
         String n = request.getParameter("email1");
         String p = request.getParameter("passwd1");
-        String u = request.getParameter("username1");
 
         String x = n + p;
         byte[] c = x.getBytes();

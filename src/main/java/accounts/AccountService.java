@@ -5,8 +5,8 @@ import java.util.Map;
 
 /**
  * @author A.Kozinov
+ * date: Oct 15 2020
  */
-
 public class AccountService {
     private final Map<String, UserProfile> loginToProfile;
     private final Map<String, UserProfile> sessionIdToProfile;

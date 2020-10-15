@@ -1,6 +1,7 @@
-package accounts;
+package testClass;
 
 import javax.servlet.http.HttpSession;
+
 
 public class Testing {
     public static void main(String[] args) {
