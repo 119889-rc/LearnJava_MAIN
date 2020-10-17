@@ -21,7 +21,7 @@ public class WelcomeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) {
 
         try {
-            getServletContext().getRequestDispatcher("/loginPageMain.jsp").forward(request, response);
+            getServletContext().getRequestDispatcher("/loginPage.jsp").forward(request, response);
         }
         catch (ServletException | IOException exception){
             System.out.println(exception);

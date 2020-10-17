@@ -1,4 +1,4 @@
-package servlets;
+package servlets.loginPage;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,9 +15,9 @@ import java.io.IOException;
         description = "234",
         urlPatterns = "/proccessregistration"
 )
-public class RegButtonLoginFormServlet extends HttpServlet {
+public class RegisterButton extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-            request.getRequestDispatcher("registration_page.jsp").forward(request, response);
+            request.getRequestDispatcher("registerPage.jsp").forward(request, response);
     }
 }

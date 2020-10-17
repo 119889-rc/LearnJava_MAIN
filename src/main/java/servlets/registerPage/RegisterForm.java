@@ -1,6 +1,6 @@
-package servlets;
+package servlets.registerPage;
 
-import connections.ConnectionRegistrationFormToSQL;
+import connections.ConnRegisterForm;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -17,16 +17,18 @@ import java.io.PrintWriter;
         description = "my descr",
         urlPatterns = {"/registrationform"}
 )
-public class RegistrationFormServlet extends HttpServlet {
-    //get logged user profile
+public class RegisterForm extends HttpServlet {
+    /* get logged user profile */
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) {
     }
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws
             IOException, ServletException {
         PrintWriter out = response.getWriter();
+
+        HttpSession session = null;
 
 
         String n = request.getParameter("email1");
@@ -37,8 +39,9 @@ public class RegistrationFormServlet extends HttpServlet {
         /* q - endpoint DB variable */
         String q = bytesToHex(c);
 
-        if (ConnectionRegistrationFormToSQL.validate(q)) {
-            request.getRequestDispatcher("/user_page_generated.jsp").forward(request, response);
+        if (ConnRegisterForm.validate(q)) {
+
+            request.getRequestDispatcher("/userPage.jsp").forward(request, response);
         } else {
             out.print("Sorry");
             RequestDispatcher rd = request.getRequestDispatcher("404.jsp");
